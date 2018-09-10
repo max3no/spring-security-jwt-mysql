@@ -20,6 +20,12 @@ Configure your java in environmental variables.
 ### Setup
 	* change the application.properties file with your database, id and pwd.
 	* choose your own jwt-secret key
+	* Insert following roles in dB 
+	
+```
+INSERT INTO roles(name) VALUES('ROLE_USER');
+INSERT INTO roles(name) VALUES('ROLE_ADMIN');
+```
 	
 ### Maven dependencies used
 	* spring-boot-starter-data-jpa
